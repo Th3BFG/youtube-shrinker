@@ -1,21 +1,22 @@
 // ==UserScript==
 // @name         YouTube Player Shrinker
+// @homepage     https://github.com/Th3BFG/youtube-shrinker
 // @namespace    https://github.com/Th3BFG/youtube-shrinker
-// @version      1.1
+// @version      1.2
 // @description  Shrink YT player to watch Future House videos at work.
 // @author       Th3BFG
 // @match        https://www.youtube.com/*
 // @updateURL    https://github.com/Th3BFG/youtube-shrinker/raw/master/youtube-shrinker.js
 // @downloadURL  https://github.com/Th3BFG/youtube-shrinker/raw/master/youtube-shrinker.js
+// @run-at       document-idle
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(function() { 'use strict';
     // Create local members
     var player = document.getElementById('player-api');
     var holder = document.getElementById('placeholder-player');
-    var holderChild = holder.childNodes[1];
+    var holderChild = holder.childNodes[1]; // The holder stores its style class in a nested div. Sorry for the magic number
     var sidebar = document.getElementsByClassName("watch-sidebar-section");
     var sidebarHolder = document.getElementById('watch7-sidebar');
     
