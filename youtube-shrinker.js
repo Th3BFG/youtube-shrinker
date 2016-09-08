@@ -2,7 +2,7 @@
 // @name         YouTube Player Shrinker
 // @homepage     https://github.com/Th3BFG/youtube-shrinker
 // @namespace    https://github.com/Th3BFG/youtube-shrinker
-// @version      1.2
+// @version      1.3
 // @description  Shrink YT player to watch Future House videos at work.
 // @author       Th3BFG
 // @match        https://www.youtube.com/*
@@ -13,6 +13,9 @@
 // ==/UserScript==
 
 (function() { 'use strict';
+    // Hacky while loop to not user jQuery
+    while(document.readyState !== "complete") {}
+
     // Create local members
     var player = document.getElementById('player-api');
     var holder = document.getElementById('placeholder-player');
