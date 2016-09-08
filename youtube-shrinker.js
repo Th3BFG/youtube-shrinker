@@ -12,7 +12,7 @@
 // @grant        none
 // ==/UserScript==
 
-$(window).bind('load', function() { 'use strict';
+$(window).on('load', function() { 'use strict';
     // Create local members
     var player = document.getElementById('player-api');
     var holder = document.getElementById('placeholder-player');
