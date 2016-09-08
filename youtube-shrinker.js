@@ -5,6 +5,7 @@
 // @version      1.8
 // @description  Shrink YT player to watch Future House videos at work.
 // @author       Th3BFG
+// @run-at       document-idle
 // @match        https://www.youtube.com/*
 // @updateURL    https://github.com/Th3BFG/youtube-shrinker/raw/master/youtube-shrinker.js
 // @downloadURL  https://github.com/Th3BFG/youtube-shrinker/raw/master/youtube-shrinker.js
